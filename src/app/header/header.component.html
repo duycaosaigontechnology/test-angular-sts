@@ -1,0 +1,9 @@
+<mat-toolbar>
+  <button mat-icon-button (click)="toggleMenu()" aria-label="Example icon button with a vertical three dot icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>My App</span>
+</mat-toolbar>
+
+
+<app-menu (onClose)="toggleMenu()" [@slideInOut]="menuState"></app-menu>
